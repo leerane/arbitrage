@@ -1,0 +1,32 @@
+// --- BASE STYLES ---
+
+html {
+  box-sizing: border-box;
+  font-size: font-size(base);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-size: font-size(base);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+@include font-face(Roboto, "../fonts/", robotoregular, normal, 400, swap, null, null, (woff2: woff2, woff: woff));
+
+@include font-face(Roboto, "../fonts/", robotolight, normal, 300, swap, null, null, (woff2: woff2, woff: woff));
+
+@include font-face(Roboto, "../fonts/", robotomedium, normal, 500, swap, null, null, (woff2: woff2, woff: woff));

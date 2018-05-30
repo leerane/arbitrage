@@ -1,0 +1,30 @@
+.hamburger-button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  background-color: rgba(color($main-c, primary), 0.2);
+  background-image: url("../img/svg/icon-menu-open.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  &:focus,
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: breakpoint(tablet)) {
+    display: none;
+  }
+}
+
+.hamburger-button--close {
+  background-image: url("../img/svg/icon-menu-close.svg");
+  background-size: 20px;
+}

@@ -1,0 +1,15 @@
+.main-header {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  @media (min-width: breakpoint(tablet)) {
+    min-height: 132px;
+    overflow: visible;
+  }
+
+  @media (min-width: breakpoint(desktop)) {
+    min-height: 150px;
+  }
+}

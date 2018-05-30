@@ -1,0 +1,31 @@
+.main-footer {
+  background-color: color($grey-c, darkest);
+}
+
+.main-footer__inner {
+  position: relative;
+  width: auto;
+  margin: 0 auto;
+  padding: rem(25px) rem(15px) rem(26px) rem(15px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @media (min-width: breakpoint(tablet)) {
+    padding: rem(36px) rem(15px) rem(33px) rem(15px);
+  }
+
+  @media (min-width: breakpoint(desktop)) {
+    width: auto;
+    padding: 44px 50px;
+    max-width: 1170px;
+  }
+}
+
+.main-footer__copyright {
+  width: 90%;
+
+  @media (min-width: breakpoint(tablet)) {
+    width: 100%;
+  }
+}

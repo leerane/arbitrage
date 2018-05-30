@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Gulp-based starter kit that allows you to start your own front-end projects easily.">
+    <meta name="keywords" content="gulp, starter, kit, scss, sass, boilerplate, html, css, front-end">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Школа трафика</title>
+
+    <!--- Preloading fonts and other stuff -->
+    <link rel="preload" href="fonts/robotoregular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/robotolight.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="stylesheet" href="css/styles.min.css">
+
+    <!-- Picturefill -->
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="js/libs/picturefill/picturefill.min.js" async></script>
+  </head>
+  <body class="main-page">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <div class="main-navigation__inner">
+          <div class="main-navigation__top">
+            <a class="main-logo">
+              <picture>
+                <source type="image/webp" srcset="img/main-logo@1x.webp 1x, img/main-logo@2x.webp 2x">
+                <img src="img/main-logo@1x.png" width="109" height="30" alt="Main logo" srcset="img/main-logo@2x.png" class="main-logo__img">
+              </picture>
+            </a>
+            <button class="hamburger-button main-navigation__hamburger-button js-hamburger-button" type="button" aria-label="Кнопка выпадающего меню"></button>
+          </div>
+          <ul class="main-navigation__list visually-hidden">
+            <li class="main-navigation__item">
+              <a href="index.html" class="link main-navigation__link">Главная</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="#features" class="link main-navigation__link">Преимущества</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="#author" class="link main-navigation__link">Автор</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="#steps" class="link main-navigation__link">О курсе</a>
+            </li>
+            <li class="main-navigation__item">
+              <a href="#download" class="link main-navigation__link link--download">Скачать</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-content">
+      <h1 class="visually-hidden">Main page</h1>
+      <section class="promo">
+        <div class="promo__top">
+          <h4 class="promo__subtitle">Видеокурс</h4>
+          <h2 class="promo__title">“&nbsp;Вступление в товарный<br>&nbsp;&nbsp;&nbsp;&nbsp;арбитраж трафика&nbsp;”</h2>
+          <p class="promo__description">Получи бесплатный видеокурс<br>по товарному арбитражу для новичков</p>
+        </div>
+        <div class="promo__bottom">
+          <div class="promo__screenshot">
+            <picture>
+              <source type="image/webp" srcset="img/video-screenshot@1x.webp 1x, img/video-screenshot@2x.webp 2x">
+              <img src="img/video-screenshot@1x.png" width="245" height="242" alt="Видеокурс" srcset="img/video-screenshot@2x.png 2x" class="promo__image">
+            </picture>
+          </div>
+        </div>
+        <form action="" method="post" class="download-form promo__form">
+          <div class="download-form__inner">
+            <div class="input input--type--email download-form__input">
+              <div class="input__wrap">
+                <label for="email-field" class="visually-hidden">E-mail</label>
+                <input type="email" required name="email" id="email-field" class="input__control input__control--icon" placeholder="введите ваш e-mail">
+              </div>
+            </div>
+            <button class="button download-form__button" type="submit">Скачать видео курс</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__inner">
+        <p class="footer-copyright main-footer__copyright">
+          <a href="index.html" class="footer-copyright__link">"Школа трафика"</a> - школа товарного арбитража трафика Артура Гарнаева (с) 2016
+        </p>
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a href="#" class="social-link"><span class="visually-hidden">Instagram</span>
+              <svg aria-label="Instagram" width="24" height="24" class="social-link__svg">
+                <use xlink:href="img/svg/sprite.svg#social-instagram"/>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a href="#" class="social-link"><span class="visually-hidden">Facebook</span>
+              <svg aria-label="Facebook" width="24" height="24" class="social-link__svg">
+                <use xlink:href="img/svg/sprite.svg#social-facebook"/>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a href="#" class="social-link"><span class="visually-hidden">Twitter</span>
+              <svg aria-label="Twitter" width="24" height="24" class="social-link__svg">
+                <use xlink:href="img/svg/sprite.svg#social-vk"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- SVG for Everybody -->
+    <script src="js/libs/svg4everybody/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
+
+    <!-- Main script -->
+    <script src="js/main.min.js" async></script>
+
+    <!-- Google Maps API -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv3Mue0MjRxWehq81r_XyQS8Lnr-iQ-VQ&callback"></script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+.main-navigation {
+  width: 100%;
+  background-color: transparent;
+
+  @media (min-width: breakpoint(tablet)) {
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 0 49px;
+    max-height: 89px;
+  }
+
+  @media (min-width: breakpoint(desktop)) {
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 0 49px;
+    max-height: 89px;
+    max-width: 1150px;
+  }
+}
+
+.main-navigation__top {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  padding: rem(33px 15px 34px 15px);
+  width: 100%;
+  background-color: transparent;
+}
+
+.main-navigation__inner {
+  width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: breakpoint(tablet)) {
+    position: relative;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 22px;
+  }
+}
+
+.main-navigation__list {
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto;
+  flex-shrink: 0;
+  list-style: none;
+  margin: 0 auto;
+  padding: rem(16px) 0 rem(16px) 0;
+  background-color: color($grey-c, darkest);
+
+  @include font-par(font-family(roboto), font-weight(regular), font-size(base), normal, color($base-c, white), font-lh(base));
+  text-transform: uppercase;
+
+  @media (min-width: breakpoint(tablet)) {
+    flex-direction: row;
+  }
+}
+
+.main-navigation__item {
+  display: flex;
+  padding: 0.625em 0.625em;
+}
+
+.main-navigation__link {
+  position: relative;
+  flex-basis: auto;
+  padding: 0.4em 1em;
+  background-color: color($main-c, primary);
+  min-width: 0;
+  transition: min-width 0.25s ease-in;
+
+  @media (min-width: breakpoint(tablet)) {
+    background-color: transparent;
+  }
+
+  &:focus,
+  &:hover {
+    color: color($base-c, white);
+    min-width: 100%;
+    text-align: left;
+  }
+
+  &:active {
+    color: rgba(color($base-c, white), 0.6);
+  }
+}
+
+.main-navigation__link:focus,
+.main-navigation__link:hover {
+  @media (min-width: breakpoint(tablet)) {
+    color: color($main-c, primary);
+  }
+}
+
+.main-navigation__link:active{
+  @media (min-width: breakpoint(tablet)) {
+    color: rgba(color($main-c, primary), 0.6);
+  }
+}
+
+.main-navigation__icon {
+  position: absolute;
+  top: 5px;
+  left: -43px;
+  fill: #d3d2d2;
+  color: #d3d2d2;
+
+  @media (min-width: breakpoint(tablet)) {
+    top: 4px;
+    left: 0;
+  }
+}
+
+
+.main-navigation__hidden {
+  @media (min-width: breakpoint(tablet)) {
+    @include visually-hidden();
+  }
+}
+
+.main-navigation__hamburger-button {
+  position: absolute;
+  top: rem(23px);
+  right: rem(15px);
+}

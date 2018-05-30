@@ -1,0 +1,23 @@
+.footer-copyright {
+  @include clear-list();
+
+  margin-bottom: rem(20px);
+
+  @include font-par(font-family(roboto), font-weight(light), rem(12px), normal, color($grey-c, default), font-lh(base));
+
+  text-align: center;
+
+  @media (min-width: breakpoint(tablet)) {
+    text-align: left;
+    font-size: rem(14px);
+  }
+}
+
+.footer-copyright__link {
+  color: color($main-c, primary);
+  text-transform: uppercase;
+
+  /*&::after {
+    @include pseudo-ie11-fix();
+  }*/
+}
